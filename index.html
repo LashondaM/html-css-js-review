@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My first html page!</h1>
+    <p>This is a Paragraph</p>
+    <!-- This is the first row -->
+    <table id="tbl" style="font-family:Arial; font-size: 30px; width: 100%;">
+        <tr>
+            <td>Id</td>
+            <td>Username</td>
+            <td>Firstname</td>
+            <td>IsAdmin</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>jsmith</td>
+            <td>Jane</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>jdoe</td>
+            <td>Joe</td>
+            <td>false</td>
+        </tr>
+    </table>
+    <button id="btn" onclick="hide()">Click me to hide the table</button>
+    <button id="btn1" onclick="show()">Click me to show the table</button>
+    <script lang="javascript">
+        function hide(){
+            document.getElementById("tbl").style.display = "none";
+        }
+        function show(){
+            document.getElementById("tbl").style.display = "normal";
+        }
+    </script>
+</body>
+</html>
