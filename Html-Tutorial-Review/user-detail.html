@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail</title>
+</head>
+<body onload="getUserByPk()">
+    <a href="user-list.html">Back to user list</a>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>
+                <input id="xid" type="text" size=10 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>
+                <input id="xusername" type="text" size=30 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td id="xfirstname"></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td id="xlastname"></td>
+        </tr>
+        <tr>
+            <td>phone</td>
+            <td id="xphone"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td id="xemail"></td>
+        </tr>
+        <tr>
+            <td>Reviewer</td>
+            <td id="xisreviewer"></td>
+        </tr>
+        <tr>
+            <td>Admin</td>
+            <td id="xisadmin"></td>
+        </tr>
+    </table>
+    <button onclick="remove()">Delete</button>
+
+
+    <script src="../JAVASCRIPT-Review/user-detail.js"></script>
+    <script src="../JAVASCRIPT-Review/user-utility.js"></script>
+</body>
+</html>

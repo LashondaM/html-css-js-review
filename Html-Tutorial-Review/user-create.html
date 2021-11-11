@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+</head>
+<body>
+    <a href="user-list.html">Back to user list</a>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>
+                <input id="xid" type="text" size=10>
+            </td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>
+                <input id="xusername" type="text" size=30>
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input id="xpassword" type="password" size=30>
+                <input id="xpassword2" type="password" size=30 onblur="checkPassword()">
+            </td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td>
+                <input id="xfirstname" type="text" size=30>
+            </td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td>
+                <input id="xlastname" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>phone</td>
+            <td>
+                <input id="xphone" type="text" size=30>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input id="xemail" type="text" size=30>
+            </td>
+        </tr>
+        <tr>
+            <td>Reviewer</td>
+            <td>
+                <!-- <input id="xisreviewer" type="checkbox" checked size=7> -->
+                <input id="xisreviewer" type="checkbox" size=7> <!--checked is a default value-->
+            </td>
+        </tr>
+        <tr>
+            <td>Admin</td>
+            <td>
+                <input id="xisadmin" type="checkbox" size=7>
+            </td>
+        </tr>
+    </table>
+
+    <button onclick="save()">Save</button>
+
+
+    <script src="../JAVASCRIPT-Review/user-create.js"></script>
+</body>
+</html>

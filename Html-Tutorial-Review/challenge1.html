@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge 1</title>
     <link rel="stylesheet" href="../CSS-Review/challenge1.css">
+    <script lang="javascript">
+        const welcome = () =>{
+            console.log("Welcome to my CV!")
+        }
+        const button_click = () =>{
+            console.log("The button was clicked!")
+            let ctrl = document.getElementById("name")
+            let name = ctrl.value;
+            alert(`Hello to you ${name}`) /* interpulated message */
+        }
+    </script>
 </head>
-<body>
+<body onload="welcome()">
+    <div>
+        <label>Enter your name: </label>
+        <input id="name" type="text">
+        <button onclick="button_click()">click me!</button>
+    </div>
     <!-- Personal Information -->
     <span id="section-1">Lashonda</span>
     <span id="section">Miller</span>
